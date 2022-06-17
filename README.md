@@ -58,3 +58,29 @@ git log
 to create version/commit all changes by git
 ....
 git commit -m "message"
+...
+
+
+
+To set CI/CD pipeline inHeroku we need 3 information
+
+1. Heroku Email ID: anweshsahoo23@gmail.com
+2. Heroku API_Key:6b0e428f-a4e8-4a38-abe0-836a5d48ebc5
+3. Heroku_APP_Name:ml_project_apps
+
+
+Build DOCKER IMAGE
+....
+
+docker build -t<image name>:<tagname>
+
+
+note: Image name for docker must be lowercase
+
+
+To list docker image
+...
+docker image
+...
+
+docker run -p 5000:5000 -e PORT = 5000
